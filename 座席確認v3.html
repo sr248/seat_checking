@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function disp(div_id, para_id){
+            const pn = document.getElementById(para_id);
+            const dn = document.getElementById(div_id);
+            user = window.prompt('名前を入力してください','');
+            if(user.length>0){
+                pn.innerHTML = user;
+                //alert(p.innerHTML);
+                dn.style = "background-color: red;";
+            }
+        }
+    </script>
+<meta charset="utf-8">
+<title>座席</title>
+<!-- <script src="button.js"></script> -->
+<style type="text/css">
+	
+/*全てのパラメータはiPad用に人手で微調整しています。*/
+/*
+藤田君へ
+繰り返し文...
+*/
+
+*{
+		margin:0px;padding:0px;
+	}
+
+.seet1 {
+border: solid 2px rgb(0, 0, 0);
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:10px;
+right:10px;
+/*background-color: red;*/
+}
+
+.seet2 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet3 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet4 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet5 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet6 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet7 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet8 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet9 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+
+
+
+.seet12 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:-418px;
+right:120px;
+}
+
+.seet13 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet14 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet15 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet16 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet17 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet18 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet19 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet20 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:80px;
+right:-2px;
+}
+
+.seet21 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet22 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:-500px;
+right:100px;
+}
+
+.seet23 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet24 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet25 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet26 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet27 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet28 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet29 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet30 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:80px;
+right:-2px;
+}
+
+.seet31 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+
+
+
+.seet32 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:100px;
+}
+
+
+.seet33 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:-54px;
+right:-2px;
+}
+
+.seet34 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:100px;
+}
+
+.seet35 {
+border: solid 2px #000;
+width: 100px;
+height: 50px;
+position:absolute;
+bottom:50px;
+right:-2px;
+}
+
+.seet36 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:120px;
+}
+
+.seet37 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:90px;
+}
+
+.seet38 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:90px;
+}
+
+.seet39 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:90px;
+}
+
+.seet40 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:90px;
+}
+
+.seet41 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-82px;
+right:-2px;
+}
+
+.seet42 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:-94px;
+}
+
+.seet43 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:-94px;
+}
+
+.seet44 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-54px;
+right:-2px;
+}
+
+
+.seet45 {
+border: solid 2px #000;
+width: 90px;
+height: 50px;
+position:absolute;
+bottom:-2px;
+right:90px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center">座席記録</h1>
+<h2 style="text-align: center">座ったところにお名前を書いてください</h2>
+
+<script>
+    /*class,座席番号,*/
+    const utils = [[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[12,10],[13,11],
+    [14,12],[15,13],[16,14],[17,15],[18,16],[19,17],[20,26],[21,33],[22,18],
+    [23,19],[24,20],[25,21],[26,22],[27,23],[28,24],[29,25],[30,27],[31,32],
+    [32,31],[33,28],[34,29],[35,30],[36,34],[37,35],[38,36],[39,37],[40,38],
+    [41,41],[42,40],[43,39],[44,42],[45,43]];
+
+    for(i=0;i<utils.length;i++){
+        let div_doc = `
+            <div class="seet${utils[i][0]}" id="div${i+1}">
+            <h5>座席番号${utils[i][1]}</h5>
+            <p id='p${i+1}'><input type="button" value="名前入力" onclick="disp('div${i+1}','p${i+1}')"></p>
+            `
+        document.write(div_doc);
+    }
+</script>
+</body>
+</html>
