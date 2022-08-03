@@ -28,25 +28,14 @@
                     dn.style = "background-color: white;";
                 }
             }
-            
-            /*
-            if(user.length>0){
-                pn.innerHTML = user;
-                //alert(p.innerHTML);
-                dn.style = "background-color: red;";
-            }*/
+
         }
     </script>
 <meta charset="utf-8">
 <title>座席</title>
-<!-- <script src="button.js"></script> -->
 <style type="text/css">
 	
 /*全てのパラメータはiPad用に人手で微調整しています。*/
-/*
-藤田君へ
-繰り返し文...
-*/
 
 *{
 		margin:0px;padding:0px;
@@ -451,6 +440,7 @@ right:90px;
 
 </style>
 </head>
+
 <body>
 
 <div style="text-align:center">
@@ -468,7 +458,7 @@ right:90px;
     [41,41],[42,40],[43,39],[44,42],[45,43]];
 
     for(i=0;i<utils.length;i++){
-        let number = utils[i][1];
+        let number = utils[i][1]; //座席番号
         let div_doc = `
             <div class="seet${utils[i][0]}" id="div${number}">
             <h5>座席番号${number}</h5>
