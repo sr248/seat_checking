@@ -468,10 +468,11 @@ right:90px;
     [41,41],[42,40],[43,39],[44,42],[45,43]];
 
     for(i=0;i<utils.length;i++){
+        let number = utils[i][1];
         let div_doc = `
-            <div class="seet${utils[i][0]}" id="div${i+1}">
-            <h5>座席番号${utils[i][1]}</h5>
-            <p id='p${i+1}'><input type="button" value="名前入力" onclick="enter('div${i+1}','p${i+1}')"></p>
+            <div class="seet${utils[i][0]}" id="div${number}">
+            <h5>座席番号${number}</h5>
+            <p id='p${number}'><input type="button" value="名前入力" onclick="enter('div${number}','p${number}')"></p>
             `
         document.write(div_doc);
     }
