@@ -1,0 +1,174 @@
+*{
+    padding:0px;
+	margin:0px;
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: 0.1fr 2.9fr 0.1fr; 
+    grid-template-rows: 0.7fr 2.4fr 0.2fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". head ."
+      ". Seats ."
+      ". . .";
+  }
+  
+  .Seats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "seat38 seat37 seat36 seat35 seat34 . seat30 seat31 seat32 seat33 . ."
+      ". . . . . . seat29 seat28 seat27 seat26 . ."
+      "seat41 seat40 seat39 . . . . . . . . seat9"
+      ". seat43 seat42 . . . . . seat25 seat17 . seat8"
+      ". . . . . . . . seat24 seat16 . seat7"
+      "utils utils utils utils utils utils utils . seat23 seat15 . seat6"
+      "utils utils utils utils utils utils utils . seat22 seat14 . seat5"
+      "utils utils utils utils utils utils utils . seat21 seat13 . seat4"
+      "utils utils utils utils utils utils utils . seat20 seat12 . seat3"
+      "utils utils utils utils utils utils utils . seat19 seat11 . seat2"
+      "utils utils utils utils utils utils utils . seat18 seat10 . seat1";
+    grid-area: Seats;
+  }
+
+  .Seats > *{
+    border: 1.2px solid black;
+  }
+    /* .Seats .seat34,
+    .Seats .seat35 {
+    border-right: none; 
+    } */
+  
+  .seat1 { grid-area: seat1; }
+  
+  .seat2 { grid-area: seat2; }
+  
+  .seat3 { grid-area: seat3; }
+  
+  .seat4 { grid-area: seat4; }
+  
+  .seat5 { grid-area: seat5; }
+  
+  .seat6 { grid-area: seat6; }
+  
+  .seat7 { grid-area: seat7; }
+  
+  .seat8 { grid-area: seat8; }
+  
+  .seat9 { grid-area: seat9; }
+  
+  .seat10 { grid-area: seat10; }
+  
+  .seat11 { grid-area: seat11; }
+  
+  .seat12 { grid-area: seat12; }
+  
+  .seat13 { grid-area: seat13; }
+  
+  .seat14 { grid-area: seat14; }
+  
+  .seat15 { grid-area: seat15; }
+  
+  .seat16 { grid-area: seat16; }
+  
+  .seat17 { grid-area: seat17; }
+  
+  .seat18 { grid-area: seat18; }
+  
+  .seat19 { grid-area: seat19; }
+  
+  .seat20 { grid-area: seat20; }
+  
+  .seat21 { grid-area: seat21; }
+  
+  .seat22 { grid-area: seat22; }
+  
+  .seat23 { grid-area: seat23; }
+  
+  .seat24 { grid-area: seat24; }
+  
+  .seat25 { grid-area: seat25; }
+  
+  .seat26 { grid-area: seat26; }
+  
+  .seat27 { grid-area: seat27; }
+  
+  .seat28 { grid-area: seat28; }
+  
+  .seat29 { grid-area: seat29; }
+  
+  .seat30 { grid-area: seat30; }
+  
+  .seat31 { grid-area: seat31; }
+  
+  .seat32 { grid-area: seat32; }
+  
+  .seat33 { grid-area: seat33; }
+  
+  .seat34 { grid-area: seat34; }
+  
+  .seat35 { grid-area: seat35; }
+  
+  .seat36 { grid-area: seat36; }
+  
+  .seat37 { grid-area: seat37; }
+  
+  .seat38 { grid-area: seat38; }
+  
+  .seat39 { grid-area: seat39; }
+  
+  .seat40 { grid-area: seat40; }
+  
+  .seat41 { grid-area: seat41; }
+  
+  .seat42 { grid-area: seat42; }
+  
+  .seat43 { grid-area: seat43; }
+  
+  .head { grid-area: head; }
+
+  .utils { grid-area: utils; border: none}
+  
+  .head {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.3fr 1.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."
+      "Title"; 
+    grid-area: head; 
+  }
+
+  .Title { grid-area: Title; }
+
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* For presentation only, no need to copy the code below */
+/*   
+  .container * {
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  
