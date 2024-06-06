@@ -1,5 +1,5 @@
 # seat_checking
-Being Used at a crammer. Refactored for iPadOS16.6.1
+This website is in use at a crammer. Refactored for iPadOS16.6.1
 
 See the website HERE:
 
